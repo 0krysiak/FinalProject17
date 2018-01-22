@@ -3,9 +3,6 @@ class Pulsar(object):
     ATTRIBUTES
     x, y
     fuel
-
-
-
     isulation
 
     METHODS
