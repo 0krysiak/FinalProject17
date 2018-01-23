@@ -20,18 +20,20 @@ else:
 
 
 answer = 'yes'
-answer_ = input("To start off, would you like to see the status of the Pulsar? ").lower()
+answer_ = input("To start off, would you like to see the details of your mission?").lower()
 while answer_ != answer:
     answer_ = input("""Are you sure? There could be some important information.
     Answer again. """)
-print(f"Okay. Here is the current status")
+print(f"""Okay. Here are the details:
 
-# ************make a class and put here************
+Ship Name : The Pulsar
+Mission Statement : Take the Pulsar to the nearest black hole and explore the depths of V616 Mon.
+Duration of Trip : Approx One Month
+To Contact Ground Control: Press and Hold 'Ground Control' Button on Controls Table
+""")
 
-#           ****Is there something the player could type at any time to get the status of the ship?
 
-print("""There is enough fuel for the journey there and back.
-It should only take 5 days to get to the edge of the black hole.""")
+
 
 
 
