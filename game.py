@@ -20,7 +20,7 @@ else:
 
 
 answer = 'yes'
-answer_ = input("To start off, would you like to see the details of your mission?").lower()
+answer_ = input("To start off, would you like to see the details of your mission? ").lower()
 while answer_ != answer:
     answer_ = input("""Are you sure? There could be some important information.
     Answer again. """)
@@ -32,20 +32,9 @@ Duration of Trip : Approx One Month
 To Contact Ground Control: Press and Hold 'Ground Control' Button on Controls Table
 """)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+move_on_ok = 'ok'
+move_on= input("Type 'OK' To Move On ").lower()
+while move_on != move_on_ok:
+    move_on = input("Type 'OK' To Move On " ).lower()
+print(f"You ride in the ship for a month, regularly contacting Ground Control and...")
 
