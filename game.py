@@ -1,4 +1,4 @@
-# import sys
+import sys
 
 # print("""Welcome! You have been chosen to be the first person to test the Pulsar!
 # It’s the newest, state-of-the-art technology that will be used to explore space and the universe in ways we have only before imagined.
@@ -61,7 +61,8 @@ while blackhole_ != blackhole:
 print("Flying into V616 Mon!")
 # Allows player to choose if they would like to move on or not
 
-print("""As you enter the black hole, you feel extreme turbulence. All of the controls are going crazy and there are noises and bright lights everywhere.
+print("""As you enter the black hole, you feel extreme turbulence.
+All of the controls are going crazy and there are noises and bright lights everywhere.
 After a few terrifying minutes, it all suddenly stops.
 
 
@@ -69,18 +70,36 @@ What do you do first?:
     1. Check Fuel
     2. Call Ground Control
     3. Eject Yourself from Space Ship""")
+#Player is given three options to choose from in the next command
 
-one = 'check_fuel'
-two = 'call'
-three = 'eject'
+check_fuel = 'one'
+call = 'two'
+eject = 'three'
 
 choice = input("Type the number 1, 2, or 3 to choose your path: ")
-if choice == one:
+if choice == eject:
+    sys.exit("No one will ever know what was in that black hole")
+elif choice == check_fuel:
     print("There is no fuel left. How are you still flying?")
-elif choice == two:
+elif choice == call:
     print("You are unable to call Ground Control, no signal is getting through.")
-else:
-    print("No one will ever know what was in that black hole")
+# Player is able to choose which option they want to see played out
+
+press_enter = 'enter'
+enter_press = input("Type 'ENTER' to continue: ").lower()
+while enter_press == press_enter:
+    print("""
+
+    No connection to Earth and you are still moving through space even with no fuel.
+    Could this be...an alternate universe?!
+
+
+    As you move through space you begin to see all the planets of the Solar System. They look normal except for one thing:
+    Some look like they contain life.""")
+    break
+
+
+
 
 
 
