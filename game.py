@@ -1,103 +1,118 @@
 import sys
-#print("your answer is", answer)
+# #print("your answer is", answer)
 
-print("""Welcome! You have been chosen to be the first person to test the Pulsar!
-It’s the newest, state-of-the-art technology that will be used to explore space and the universe in ways we have only before imagined.
-If you choose to accept your mission, you will taking a journey straight into the V616 Mon, the nearest black hole to our solar system.
-You will be the first person to ever enter a black hole, so keep in mind the risks""")
-# Welcoming screen
+# print("""Welcome! You have been chosen to be the first person to test the Pulsar!
+# It’s the newest, state-of-the-art technology that will be used to explore space and the universe in ways we have only before imagined.
+# If you choose to accept your mission, you will taking a journey straight into the V616 Mon, the nearest black hole to our solar system.
+# You will be the first person to ever enter a black hole, so keep in mind the risks""")
+# # Welcoming screen
 
-name = input("What is your name? ")
-print(name)
-# Player inputs their name
+# name = input("What is your name? ")
+# print(name)
+# # Player inputs their name
 
-start = 'yes'
-response = input("Alright, it is time to start your journey! Are you ready? ").lower()
-if response in start:
-    print("""
-    Let's go!
-""")
-# If player says 'yes', they will proceed with the game
+# start = 'yes'
+# response = input("Alright, it is time to start your journey! Are you ready? ").lower()
+# if response in start:
+#     print("""
+#     Let's go!
+# """)
+# # If player says 'yes', they will proceed with the game
 
-else:
-    sys.exit(["Really? Okay, we'll get someone else to try the Pulsar."])
-# # Exits the player out of game. Must start over if they wish to play.
-
-
-answer = 'yes'
-answer_ = input("To start off, would you like to see the details of your mission? ").lower()
-while answer_ != answer:
-    answer_ = input("""Are you sure? There could be some important information.
-    Answer again. """)
-# If player enters anything except 'yes', they will be prompted again
-
-print(f"""Okay. Here are the details:
-
-Ship Name : The Pulsar
-Mission Statement : Take the Pulsar to the nearest black hole and explore the depths of V616 Mon.
-Duration of Trip : Approx One Month
-To Contact Ground Control: Press and Hold 'Ground Control' Button on Controls Table
-""")
-# # When player enters 'yes', the details of the mission will be displayed
-
-move_on_ok = 'ok'
-move_on= input("Type 'OK' To Move On ").lower()
-while move_on != move_on_ok:
-    move_on = input("Type 'OK' To Move On " ).lower()
-print(f"""
-...
-
-You ride in the ship for a month, regularly contacting Ground Control, and everything is going as planned.
-
-Then...you see it.
-
- Type 'Keep going' to enter the black hole.
-If you wish to stop here, type 'Turn around' """)
-# After this, player will be prompted to either keep going or to turn around
-
-blackhole = 'keep going'
-blackhole_ = input('Do you keep going or do you turn around? ').lower()
-while blackhole_ != blackhole:
-    blackhole_= input("You just wasted a month of your life").lower()
-print("Flying into V616 Mon!")
-# Allows player to choose if they would like to move on or not
-
-print("""As you enter the black hole, you feel extreme turbulence.
-All of the controls are going crazy and there are noises and bright lights everywhere.
-After a few terrifying minutes, it all suddenly stops.
+# else:
+#     sys.exit(["Really? Okay, we'll get someone else to try the Pulsar."])
+# # # Exits the player out of game. Must start over if they wish to play.
 
 
-What do you do first?:
-    1. Check Fuel
-    2. Call Ground Control
-    3. Eject Yourself from Space Ship""")
-#Player is given three options to choose from in the next command
+# answer = 'yes'
+# answer_ = input("To start off, would you like to see the details of your mission? ").lower()
+# while answer_ != answer:
+#     answer_ = input("""Are you sure? There could be some important information.
+#     Answer again. """)
+# # If player enters anything except 'yes', they will be prompted again
 
-check_fuel = 'one'
-call = 'two'
-eject = 'three'
+# print(f"""Okay. Here are the details:
 
-choice = input("Type the number 1, 2, or 3 to choose your path: ")
-if choice == eject:
-    sys.exit("No one will ever know what was in that black hole")
-elif choice == check_fuel:
-    print("There is no fuel left. How are you still flying?")
-elif choice == call:
-    print("You are unable to call Ground Control, no signal is getting through.")
-# Player is able to choose which option they want to see played out
-
-press_enter = 'enter'
-enter_press = input("Type 'ENTER' to continue: ").lower()
-while enter_press == press_enter:
-    print("""
-
-    No connection to Earth and you are still moving through space even with no fuel.
-    Could this be...an alternate universe?!
+# Ship Name : The Pulsar
+# Mission Statement : Take the Pulsar to the nearest black hole and explore the depths of V616 Mon.
+# Duration of Trip : Approx One Month
+# To Contact Ground Control: Press and Hold 'Ground Control' Button on Controls Table
+# """)
+# # # When player enters 'yes', the details of the mission will be displayed
 
 
-    As you move through space you begin to see all the planets of the Solar System. They look normal except for one thing:
-    Some look like they contain life.""")
-    break
+
+# move_on_ok = 'ok'
+# move_on= input("Type 'OK' To Move On ").lower()
+# while move_on != move_on_ok:
+#     move_on = input("Type 'OK' To Move On " ).lower()
+# print(f"""
+# ...
+
+# You ride in the ship for a month, regularly contacting Ground Control, and everything is going as planned.
+
+# Then...you see it.
+
+# """)
+# # After this, player will be prompted to either keep going or to turn around
+
+# groundcontrol = 'ground control'
+# ground_control = input("Type 'Ground Control' to let them know you're about to enter the black hole ").lower()
+# while ground_control != groundcontrol:
+#     ground_control = input(" Didn't want to call Ground Control? Well, they called you. You better pick up (type 'Ground Control' to answer) ").lower()
+# print("""
+# _______________________________________________
+# Ground Control: Abort mission! Abort mission!
+# _______________________________________________
+# """)
+
+# blackhole = 'keep going'
+# blackhole_ = input("""Now what? Do you keep going or do you turn around?
+
+#  Type 'Keep going' to enter the black hole.
+# If you wish to stop here, type 'Turn around'
+# """).lower()
+# while blackhole_ != blackhole:
+#     blackhole_= input("You just wasted a month of your life").lower()
+# print("Flying into V616 Mon!")
+# # Allows player to choose if they would like to move on or not
+
+# print("""As you enter the black hole, you feel extreme turbulence.
+# All of the controls are going crazy and there are noises and bright lights everywhere.
+# After a few terrifying minutes, it all suddenly stops.
+
+
+# What do you do first?:
+#     1. Check Fuel
+#     2. Call Ground Control
+#     3. Eject Yourself from Space Ship""")
+# #Player is given three options to choose from in the next command
+
+# check_fuel = 'one'
+# call = 'two'
+# eject = 'three'
+
+# choice = input("Type the number 1, 2, or 3 to choose your path: ")
+# if choice == eject:
+#     sys.exit("No one will ever know what was in that black hole")
+# elif choice == check_fuel:
+#     print("There is no fuel left. How are you still flying?")
+# elif choice == call:
+#     print("You are unable to call Ground Control, no signal is getting through.")
+# # Player is able to choose which option they want to see played out
+
+# press_enter = 'enter'
+# enter_press = input("Type 'ENTER' to continue: ").lower()
+# while enter_press == press_enter:
+#     print("""
+
+#     No connection to Earth and you are still moving through space even with no fuel.
+#     Could this be...an alternate universe?!
+
+
+#     As you move through space you begin to see all the planets of the Solar System. They look normal except for one thing:
+#     Some look like they contain life.""")
+#     break
 
 class Planet(object):
     """
@@ -159,18 +174,73 @@ pluto = Planet("Pluto", -380, 5, "Yes", "approx. 100,000", """Pluto is the small
 They are small creatures that keep to themselves and will not bother you as long as you don't bother them. Not many
 other creatures visit Pluto because of its extreme cold""")
 
-
-#planets = [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto ]
 planets_dict = {"Mercury": mercury, "Venus": venus, "Earth": earth, "Mars": mars, "Jupiter": jupiter, "Saturn": saturn, "Uranus": uranus, "Neptune": neptune, "Pluto": pluto}
 visit = input("Which planet would you like to visit? ")
+# Player gets to choose which planet they would like to visit
 if visit in planets_dict:
     current_planet = planets_dict[visit]
     print(current_planet)
 
-print("""
+if current_planet == mercury:
+    sys.exit("""The force of the rocket ships's landing knocked Mercury out of orbit and it flew into the sun.
+    You died""")
+#Inputting Mercury to visit causes the death of the player and the game to exit
 
-You will be landing on this planet in a moment. Please prepare for landing""")
+if current_planet == jupiter:
+    print("""
+    Be careful, these creatures are vicious.
+    """)
+# Player gets a warning message if the choose Jupiter
 
+fight_spaceray = 'space ray'
+fight_agility = 'agility'
+fight_spaceship = 'space ship'
+flee = 'run away'
+fight = input("""
+One of the three monsters approaches you.
+If you want to fight using a space ray, type 'space ray'
+If you want to fight using your agility, type 'agility'
+If you want to fight using your space ship, type 'space ship'
+If you want to try to get away, type 'run away'
+""")
+if fight == fight_spaceray:
+    print("You shoot the monster in the eye with a space ray, temporaily blinding it. Get in your ship and run! ")
+elif fight == fight_agility:
+    print("""You try to out run the monster, but lack of gravity and the fact that this monster is 100 times your size, you can't do it.
+
+    You die""")
+elif fight == fight_spaceship:
+    print("""You hit the monster with your space ship, which effectivley knocks it out! But, now your space ship is ruined.
+
+    All that's left to do is wait to see if the monster wakes back up...
+
+    """)
+elif fight == flee:
+    print("""You get away!
+
+    Almost...
+
+    The monster grabs your ship and crushes it in his fist.
+
+    You die""")
+
+
+if current_planet == pluto:
+    print("""
+    You become friends with the creatures that live on Pluto. They allow you to stay with them.
+    """)
+# If the player chooses Pluto, they are given this response
+
+stay = 'stay'
+leave = 'i want to go home'
+stay_leave = input("Do you stay or do you want to go home?: ")
+if stay_leave == stay:
+    print("And you live happily ever after on the icy dwarf planet, Pluto")
+elif stay_leave == leave:
+    print("""
+
+    You take board your ship and leave the creatures of Pluto. Who knows if you make it back home...""")
+# The player can choose whether to stay or leave Pluto
 
 
 
