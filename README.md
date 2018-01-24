@@ -18,6 +18,7 @@ the mission...alive.
 
 ## ADDITIONAL FILES
 1. https://docs.google.com/document/d/1hTcEx0aH7I5HQ-qSQaYJbpKnHIrjsWNBIjcidqfckx0/edit?usp=sharing - This is the document where I wrote down my ideas
+2. https://docs.google.com/presentation/d/1b6fD4RpvFe1R5VXZjrbE4xP5JFnQ5vUzs7u6FUI0B9g/edit?usp=sharing - My pictures and quick notes for presentation day
 
 ## ADDITIONAL NOTES
 Credit to Briella, who mentioned entering an alternate universe to me; I thought was a great idea to built off of. Thank you!! :))
