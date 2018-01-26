@@ -1,6 +1,6 @@
 # FinalProject17
 
-## The Pulsar
+## Pulsar
 
 ## DESCRIPTION
 
