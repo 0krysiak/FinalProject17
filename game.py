@@ -3,19 +3,19 @@ import sys
 
 
 
-def switch_planet(choose):
-    # Allows player to switch to a different planet
-    user_input = 'switch planets'
-    respond = input("Switch planets?")
-    if respond == user_input:
-        print(current_planet)
+# # def switch_planet(choose):
+# #     # Allows player to switch to a different planet
+# #     user_input = 'switch planets'
+# #     respond = input("Switch planets?")
+# #     if respond == user_input:
+# #         print(current_planet)
 
 # #print("your answer is", answer)
 
 # print("""Welcome! You have been chosen to be the first person to test the Pulsar!
 # It’s the newest, state-of-the-art technology that will be used to explore space and the universe in ways we have only before imagined.
 # If you choose to accept your mission, you will taking a journey straight into the V616 Mon, the nearest black hole to our solar system.
-# You will be the first person to ever enter a black hole, so keep in mind the risks""")
+# You will be the first person to ever enter a black hole, so keep in mind the risks.""")
 # # Welcoming screen
 
 # name = input("What is your name? ")
@@ -23,7 +23,7 @@ def switch_planet(choose):
 # # Player inputs their name
 
 # start = 'yes'
-#response = input("Alright",name "it is time to start your journey! Are you ready? ").lower()
+# response = input("Alright, {name}, it is time to start your journey! Are you ready? ".format(name=name)).lower()
 # if response in start:
 #     print("""
 #     Let's go!
@@ -73,6 +73,7 @@ def switch_planet(choose):
 #     ground_control = input(" Didn't want to call Ground Control? Well, they called you. You better pick up (type 'Ground Control' to answer) ").lower()
 # print("""
 # _______________________________________________
+
 # Ground Control: Abort mission! Abort mission!
 # _______________________________________________
 # """)
@@ -103,7 +104,7 @@ def switch_planet(choose):
 # call = 'two'
 # eject = 'three'
 
-# choice = input("Type the number 1, 2, or 3 to choose your path: ")
+# choice = input("Type the number one, two, or three to choose your path: ")
 # if choice == eject:
 #     sys.exit("No one will ever know what was in that black hole")
 # elif choice == check_fuel:
@@ -186,121 +187,157 @@ They are small creatures that keep to themselves and will not bother you as long
 other creatures visit Pluto because of its extreme cold""")
 
 planets_dict = {"Mercury": mercury, "Venus": venus, "Earth": earth, "Mars": mars, "Jupiter": jupiter, "Saturn": saturn, "Uranus": uranus, "Neptune": neptune, "Pluto": pluto}
-visit = input("Which planet would you like to visit? ")
+visit = input("""Which planet would you like to visit?
+Mercury
+Venus
+Earth
+Mars
+Jupiter
+Saturn
+Uranus
+Neptune
+Pluto
+""")
 # Player gets to choose which planet they would like to visit
 if visit in planets_dict:
     current_planet = planets_dict[visit]
     print(current_planet)
 
-# def change_current_planet(choose):
-#     currentplanet = current_planet
-#     if user_input == currentplanet:
-#         print(current_planet)
-#-------------------------------------------------------------------------------------------------------
-if current_planet == mercury:
-        sys.exit("""The force of the rocket ships's landing knocked Mercury out of orbit and it flew into the sun.
+# # def change_current_planet(choose):
+# #     currentplanet = current_planet
+# #     if user_input == currentplanet:
+# #         print(current_planet)
+# #-------------------------------------------------------------------------------------------------------
+# if current_planet == mercury:
+#         sys.exit("""The force of the rocket ships's landing knocked Mercury out of orbit and it flew into the sun.
 
-    You died""")
-#Inputting Mercury to visit causes the death of the player and the game to exit
-#-------------------------------------------------------------------------------------------------------
-if current_planet == jupiter:
-    print("""
-    Be careful, these creatures are vicious.
-    """)
-# Player gets a warning message if the choose Jupiter
+#     You died""")
+# #Inputting Mercury to visit causes the death of the player and the game to exit
+# #-------------------------------------------------------------------------------------------------------
+# if current_planet == jupiter:
+#     print("""
+#     Be careful, these creatures are vicious.
+#     """)
+# # Player gets a warning message if the choose Jupiter
 
-    fight_spaceray = 'space ray'
-    fight_agility = 'agility'
-    fight_spaceship = 'space ship'
-    flee = 'run away'
-    fight = input("""
-One of the three monsters approaches you.
-If you want to fight using a space ray, type 'space ray'
-If you want to fight using your agility, type 'agility'
-If you want to fight using your space ship, type 'space ship'
-If you want to try to get away, type 'run away'
-""")
-    if fight == fight_spaceray:
-        print("You shoot the monster in the eye with a space ray, temporaily blinding it. Get in your ship and run! ")
-    elif fight == fight_agility:
-        sys.exit("""You try to out run the monster, but between lack of gravity and the fact that this monster is 100 times your size, you can't do it.
+#     fight_spaceray = 'space ray'
+#     fight_agility = 'agility'
+#     fight_spaceship = 'space ship'
+#     flee = 'run away'
+#     fight = input("""
+# One of the three monsters approaches you.
+# If you want to fight using a space ray, type 'space ray'
+# If you want to fight using your agility, type 'agility'
+# If you want to fight using your space ship, type 'space ship'
+# If you want to try to get away, type 'run away'
+# """)
+#     if fight == fight_spaceray:
+#         print("You shoot the monster in the eye with a space ray, temporaily blinding it. Get in your ship and run! ")
+#     elif fight == fight_agility:
+#         sys.exit("""You try to out run the monster, but between lack of gravity and the fact that this monster is 100 times your size, you can't do it.
 
-    You died""")
-    elif fight == fight_spaceship:
-        print("""You hit the monster with your space ship, which effectivley knocks it out! But, now your space ship is ruined.
+#     You died""")
+#     elif fight == fight_spaceship:
+#         print("""You hit the monster with your space ship, which effectivley knocks it out! But, now your space ship is ruined.
 
-    All that's left to do is wait to see if the monster wakes back up...
+#     All that's left to do is wait to see if the monster wakes back up...
 
-    """)
-    elif fight == flee:
-        sys.exit("""You get away!
+#     """)
+#     elif fight == flee:
+#         sys.exit("""You get away!
 
-    Almost...
+#     Almost...
 
-    The monster grabs your ship and crushes it in his fist.
+#     The monster grabs your ship and crushes it in his fist.
 
-    You died""")
+#     You died""")
 
-#-------------------------------------------------------------------------------------------------------
-if current_planet == pluto:
-    print("""
-    You become friends with the creatures that live on Pluto. They allow you to stay with them.
-    """)
-# If the player chooses Pluto, they are given this response
-    stay = 'stay'
-    leave = 'i want to go home'
-    stay_leave = input("Do you stay or do you want to go home?: ")
-    if stay_leave == stay:
-        print("And you live happily ever after on the icy dwarf planet that is Pluto!")
-    elif stay_leave == leave:
-        print("""
+# #-------------------------------------------------------------------------------------------------------
+# if current_planet == pluto:
+#     print("""
+#     You become friends with the creatures that live on Pluto. They allow you to stay with them.
+#     """)
+# # If the player chooses Pluto, they are given this response
+#     stay = 'stay'
+#     leave = ['i want to go home', 'go home']
+#     stay_leave = input("Do you stay or do you want to go home?: ")
+#     if stay_leave == stay:
+#         print("And you live happily ever after on the icy dwarf planet that is Pluto!")
+#     if stay_leave in leave:
+#         print("""
 
-    You take board your ship and leave the creatures of Pluto. Who knows if you make it back home...""")
-# The player can choose whether to stay or leave Pluto
+#     You take board your ship and leave the creatures of Pluto. Who knows if you make it back home...""")
+# # The player can choose whether to stay or leave Pluto
 
-#-------------------------------------------------------------------------------------------------------
+# #-------------------------------------------------------------------------------------------------------
 if current_planet == uranus:
     print("???")
-#--------------------------------------------------------------------------------------------------------------
-if current_planet == venus:
+# #--------------------------------------------------------------------------------------------------------------
+# if current_planet == venus:
+#     print("""
+#     You see a landing strip that leads toward the center of the planet.""")
+
+#     surface = 'land on surface'
+#     landing = 'use landing strip'
+#     land = input("""Would you like to use use the landing strip or would you like to land on the surface?
+
+#     Type [land on surface] to land on the surface of Venus
+#     Type [use landing strip] to use the landing strip to land
+#     """)
+#     if land == surface:
+#             sys.exit("""The surface of Venus melts your ship!
+
+#         You died""")
+#     elif land == landing:
+#         print(""" You land inside a hallowed out area of underground Venus. All around you are creatures
+#         looking curiously at your ship. You can:
+#         [stay seated] in your ship and see what happens
+#         [leave] your ship and communicate with these creatures
+#         [fly] away in your ship and never go back
+#         """)
+#     stay_seated = 'stay seated'
+#     leave_ = 'leave'
+#     fly_away = 'fly'
+#     action = input("What would you like to do? ")
+#     if action ==  stay_seated:
+#         sys.exit("""The creatures don't like that. They begin to trash your ship!
+#          Your ship is ruined and you get attacked by them
+
+#          You died""")
+#     elif action == leave_:
+#         print("""You leave your ship and see these gruesome looking creatures up close and personal. They speak
+#         to each other in a language you can't understand.
+#         Next thing you know, you're being grabbed and pulled away into the depths of Venus.
+#         You wonder in fear what's in store for you...
+#         """)
+#     else: #action = fly_away:
+#         print("""You start up the ship and blast out of there!
+#          You hear the creatures begin to scream and they follow you out of Venus with their own space ship!
+#          And thus begins a high speed chase through space.
+#          You should go to another planet, they won't land with you since they know they are not equipped to handle any other climate other than their own
+#          """)
+#-------------------------------------------------------------------------------------------------------------------------------------
+if current_planet == earth:
     print("""
-    You see a landing strip that leads toward the center of the planet.""")
-
-    surface = 'land on surface'
-    landing = 'use landing strip'
-    land = input("""Would you like to use use the landing strip or would you like to land on the surface?
-
-    Type [land on surface] to land on the surface of Venus
-    Type [use landing strip] to use the landing strip to land
+    This looks totally different from your Earth. Maybe you shouldn't land here.
     """)
-    if land == surface:
-            sys.exit("""The surface of Venus melts your ship!
+    another_planet = 'go to another planet'
+    another = input("Type [go to another planet] to choose somewhere else to go. ")
+    if another == another_planet:
+        print("Which planet do you want to visit now? ")
+    while another != another_planet:
+        print("You should really go somewhere else if you want to live")
+        break #put function here that calls back planets list to choose from
 
-        You died""")
-    elif land == landing:
-        print(""" You land inside a hallowed out area of underground Venus. All around you are creatures
-        looking curiously at your ship. You can:
-        [stay seated] in your ship and see what happens
-        [leave] your ship and communicate with these creatures
-        [fly] away in your ship and never go back
-        """)
-    stay_seated = 'stay seated'
-    leave_ = 'leave'
-    fly_away = 'fly'
-    action = input("What would you like to do? ")
-    if action ==  stay_seated:
-        sys.exit("""The creatures don't like that. They begin to trash your ship!
-         Your ship is ruined and you get attacked by them
-
-         You died""")
-    elif action == leave_:
-        print("""You leave your ship and see these gruesome looking creatures up close and personal. They speak
-        to each other in a language you can't understand.
-        Next thing you know, you're being grabbed and pulled away into the depths of Venus""")
-    else: #action == fly_away:
-        print("""You start up the ship and blast out of there!
-         You hear the creatures begin to scream and they follow you out of Venus with their own space ship!
-         And thus begins a high speed chase through space.
-         You should go to another planet, they won't land with you since they know they are not equipped to handle any other climate other than their own
-         """)
+#-------------------------------------------------------------------------------------------------------------------------------------
+if current_planet == neptune:
+    print("The climate on Neptune is extremely cold. Landing on this planet may be dangerous")
+    land_neptune = 'yes'
+    leave_neptune = 'no'
+    neptune_landing = input("Are you sure you still want to land on Neptune? [yes] or [no] ")
+    if neptune_landing == land_neptune:
+        print("""As soon as you enter Neptune's atmosphere, your ship begins to freeze and you can feel the cold seeping into
+        it. You need to get out as quickly as possible before you get stuff there.""")
+    elif neptune_landing == leave_neptune:
+        print("That was a good call")
 
