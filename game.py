@@ -1,8 +1,5 @@
 import sys
 
-
-
-
 # def switch_planet(choose):
 #     # Allows player to switch to a different planet
 #     user_input = 'switch planets'
