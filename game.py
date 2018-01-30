@@ -390,7 +390,7 @@ if current_planet == saturn:
     action_leave = 'leave'
     action_land = 'land'
     action_flyaround = 'fly around'
-    what_do == input("Would you like you [leave] and go to another planet, [land] on Saturn, or [fly around] Saturn? "
+    what_do = input("Would you like you [leave] and go to another planet, [land] on Saturn, or [fly around] Saturn? ")
 
     if what_do == action_leave:
         print("Good idea, now choose another planet to go to.")
@@ -401,6 +401,3 @@ if current_planet == saturn:
         print("""Those geysers you read about hit your ship as you are flying around Saturn looking for the best place to land.
         You died""")
         sys.exit()
-
-
-
